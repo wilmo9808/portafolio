@@ -46,10 +46,6 @@ const Home: React.FC = () => {
                 </div>
             </section>
 
-            <section className={styles.featuredSection}>
-                <h2 className={styles.sectionTitle}>Proyectos Destacados</h2>
-                {/* Aquí iría el grid de proyectos destacados, lo conectaremos después */}
-            </section>
         </div>
     )
 }
