@@ -36,7 +36,7 @@ const Projects: React.FC = () => {
             ],
             liveUrl: 'https://sistema-gestion-citas.netlify.app',
             repoUrl: 'https://github.com/wilmo9808/sistema-citas',
-            featured: true
+            featured: false
         },
         {
             id: 'OrdenaYa',
@@ -54,7 +54,7 @@ const Projects: React.FC = () => {
             ],
             liveUrl: 'https://ordenaya.netlify.app',
             repoUrl: 'https://github.com/wilmo9808/restaurant-app',
-            featured: false
+            featured: true
         },
     ]
 
