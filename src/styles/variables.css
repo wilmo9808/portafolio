@@ -1,0 +1,50 @@
+:root {
+    /* Tema OSCURO (default) */
+    --bg-primary: #0a0c0f;
+    --bg-secondary: #1a1e24;
+    --bg-tertiary: #252b33;
+    --text-primary: #e1e9f0;
+    --text-secondary: #b0c4d9;
+    --text-muted: #8a9bb5;
+    --accent-primary: #3b82f6;
+    --accent-secondary: #10b981;
+    --accent-danger: #ef4444;
+    --border-color: #2e3a47;
+    --card-bg: #1a1e24;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+    /* Espaciado */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+
+    /* Tipografía */
+    --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+
+    /* Bordes */
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 12px;
+
+    /* Transiciones */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+}
+
+/* Tema CLARO */
+[data-theme="light"] {
+    --bg-primary: #f8fafc;
+    --bg-secondary: #ffffff;
+    --bg-tertiary: #f1f5f9;
+    --text-primary: #0f172a;
+    --text-secondary: #334155;
+    --text-muted: #64748b;
+    --accent-primary: #2563eb;
+    --accent-secondary: #059669;
+    --accent-danger: #dc2626;
+    --border-color: #e2e8f0;
+    --card-bg: #ffffff;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}

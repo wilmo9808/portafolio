@@ -1,0 +1,215 @@
+.about {
+    padding: var(--spacing-xl) 0;
+}
+
+.title {
+    font-size: 3rem;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-xl);
+}
+
+.bioText {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: var(--spacing-lg);
+}
+
+.highlight {
+    color: var(--accent-primary);
+    font-weight: 600;
+}
+
+.workPhilosophy {
+    background-color: var(--bg-secondary);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-lg);
+    border: 1px solid var(--border-color);
+}
+
+.subtitle {
+    font-size: 1.8rem;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-md);
+}
+
+.philosophyList {
+    list-style: none;
+}
+
+.philosophyList li {
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.checkIcon {
+    color: var(--accent-secondary);
+    flex-shrink: 0;
+}
+
+.skills {
+    background-color: var(--bg-secondary);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-lg);
+    border: 1px solid var(--border-color);
+}
+
+.skillCategory {
+    margin-bottom: var(--spacing-lg);
+}
+
+.categoryTitle {
+    font-size: 1.4rem;
+    color: var(--accent-primary);
+    margin-bottom: var(--spacing-md);
+}
+
+.skillGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: var(--spacing-sm);
+}
+
+/* NUEVOS ESTILOS PARA EXPERIENCIA Y EDUCACIÓN */
+.experience,
+.education {
+    margin-top: var(--spacing-xl);
+    background-color: var(--bg-secondary);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-lg);
+    border: 1px solid var(--border-color);
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-md);
+}
+
+.timelineItem {
+    background-color: var(--bg-tertiary);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-lg);
+    border: 1px solid var(--border-color);
+    transition: all var(--transition-fast);
+}
+
+.timelineItem:hover {
+    border-color: var(--accent-primary);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.timelineHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: var(--spacing-xs);
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+}
+
+.timelineHeader h3 {
+    color: var(--text-primary);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.timelineDate {
+    color: var(--accent-primary);
+    font-size: 0.95rem;
+    font-weight: 500;
+    background-color: rgba(59, 130, 246, 0.1);
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--border-radius-sm);
+}
+
+.timelinePosition {
+    color: var(--text-secondary);
+    font-weight: 500;
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.1rem;
+}
+
+.timelineList {
+    list-style: none;
+}
+
+.timelineList li {
+    color: var(--text-muted);
+    margin-bottom: var(--spacing-xs);
+    font-size: 1rem;
+    position: relative;
+    padding-left: 1.5rem;
+    line-height: 1.6;
+}
+
+.timelineList li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: var(--accent-primary);
+    font-size: 1.2rem;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+    .content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .skillGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .timelineHeader {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .timelineHeader h3 {
+        font-size: 1.2rem;
+    }
+
+    .timelineDate {
+        align-self: flex-start;
+    }
+
+    .timelineItem {
+        padding: var(--spacing-md);
+    }
+}
+
+@media (max-width: 480px) {
+    .skillGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .timelineList li {
+        font-size: 0.95rem;
+    }
+}

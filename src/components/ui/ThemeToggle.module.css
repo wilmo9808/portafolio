@@ -1,0 +1,101 @@
+.floatingButton {
+    position: fixed;
+    bottom: 1rem;
+    right: 2rem;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    z-index: 9999;
+    overflow: hidden;
+}
+
+/* Modo oscuro: botón dorado cálido para "activar sol" */
+.floatingButton.dark {
+    background: linear-gradient(135deg, #f59e0b, #f97316);
+    color: #1a1a2e;
+    box-shadow:
+        0 4px 15px rgba(245, 158, 11, 0.4),
+        0 0 30px rgba(245, 158, 11, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.floatingButton.dark:hover {
+    transform: scale(1.12) rotate(20deg);
+    box-shadow:
+        0 6px 25px rgba(245, 158, 11, 0.55),
+        0 0 45px rgba(245, 158, 11, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    background: linear-gradient(135deg, #fbbf24, #fb923c);
+}
+
+/* Modo claro: botón índigo/violeta para "activar luna" */
+.floatingButton.light {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: #fef9c3;
+    box-shadow:
+        0 4px 15px rgba(99, 102, 241, 0.35),
+        0 0 30px rgba(139, 92, 246, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.floatingButton.light:hover {
+    transform: scale(1.12) rotate(-15deg);
+    box-shadow:
+        0 6px 25px rgba(99, 102, 241, 0.5),
+        0 0 45px rgba(139, 92, 246, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.25);
+    background: linear-gradient(135deg, #818cf8, #a78bfa);
+}
+
+.iconWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: iconEnter 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes iconEnter {
+    0% {
+        transform: scale(0) rotate(-90deg);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .floatingButton {
+        bottom: 5rem;
+        right: 1rem;
+        width: 46px;
+        height: 46px;
+    }
+
+    .iconWrapper svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .floatingButton {
+        bottom: 5rem;
+        width: 42px;
+        height: 42px;
+    }
+
+    .iconWrapper svg {
+        width: 18px;
+        height: 18px;
+    }
+}
