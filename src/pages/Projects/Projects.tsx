@@ -52,7 +52,7 @@ const Projects: React.FC = () => {
                 dashboardCajeroReporteOrdenaYa,
                 menuOrdenaYa
             ],
-            liveUrl: 'https://ordenaya.netlify.app',
+            liveUrl: 'https://ordenaya-web.onrender.com/',
             repoUrl: 'https://github.com/wilmo9808/restaurant-app',
             featured: true
         },
