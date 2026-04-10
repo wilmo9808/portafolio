@@ -41,7 +41,7 @@ const Projects: React.FC = () => {
         {
             id: 'OrdenaYa',
             title: 'OrdenaYa - sistema de pedidos para restaurantes',
-            description: 'Sistema completo de gestión de pedidos en tiempo real con roles de Mesero, Chef, Cajero y Super Administrador. Incluye WebSockets, menú público con QR enlazado a cambios en tiempo real de los productos, reportes Excel y panel de administración.',
+            description: 'Sistema completo de gestión de pedidos en tiempo real con roles de Mesero, Chef, Cajero y Super Administrador. Incluye WebSockets, menú público con QR enlazado a cambios en tiempo real de los productos, reportes Excel y panel de administración. usa el usuario: [test@test.com] y contraseña: [123456] y prueba todas las funcionalidades.',
             technologies: ['React', 'TypeScript', 'Node.js', 'Express', 'Socket.io', 'Prisma', 'SQLite', 'Tailwind CSS', 'Zustand', 'Vite'],
             images: [
                 loginOrdenaYa,
@@ -52,7 +52,7 @@ const Projects: React.FC = () => {
                 dashboardCajeroReporteOrdenaYa,
                 menuOrdenaYa
             ],
-            liveUrl: 'https://ordenaya-web.onrender.com/',
+            liveUrl: 'https://ordenaya-web.onrender.com',
             repoUrl: 'https://github.com/wilmo9808/restaurant-app',
             featured: true
         },
