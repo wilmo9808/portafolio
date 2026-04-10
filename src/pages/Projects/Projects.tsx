@@ -34,7 +34,7 @@ const Projects: React.FC = () => {
                 appointmentsImg,
                 patientHistoryImg
             ],
-            liveUrl: 'https://sistema-gestion-citas.netlify.app',
+            liveUrl: 'https://sistema-citas-l54u.onrender.com',
             repoUrl: 'https://github.com/wilmo9808/sistema-citas',
             featured: false
         },

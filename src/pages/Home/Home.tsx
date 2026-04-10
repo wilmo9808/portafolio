@@ -31,7 +31,7 @@ const Home: React.FC = () => {
                         <Link to={ROUTES.ABOUT}>
                             <Button variant="secondary" size="lg">Conoce mi enfoque</Button>
                         </Link>
-                        <a href="/CV ACTUALIZADA.pdf" download="Wilson_Molina_CV.pdf">
+                        <a href={`${import.meta.env.BASE_URL}CV ACTUALIZADA.pdf`} download="Wilson_Molina_CV.pdf">
                             <Button variant="secondary" size="lg">Descargar CV</Button>
                         </a>
                     </div>
